@@ -51,7 +51,7 @@ public class EjerciciosBasicosJava {
           System.out.print (ejercicios.multa(65, false));
            System.out.print (ejercicios.multa(65, true));
            
-           
+           // testeo ejercicio 3
            System.out.print (ejercicios.vanidad(22));
            System.out.print (ejercicios.vanidad(23));
            System.out.print (ejercicios.vanidad(24));
