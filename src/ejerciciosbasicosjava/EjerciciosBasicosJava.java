@@ -28,6 +28,14 @@ public class EjerciciosBasicosJava {
     }
         return 2;// el resto de casos ,que son que voy a mas de 80
     }
+    public boolean vanidad (int n) {
+    if (n % 11 == 0 || n% 11==1){
+         return true;
+    }
+    return false;
+  
+}
+    
 
     /**
      * @param args the command line arguments
@@ -42,6 +50,11 @@ public class EjerciciosBasicosJava {
          System.out.print (ejercicios.multa(60, false));
           System.out.print (ejercicios.multa(65, false));
            System.out.print (ejercicios.multa(65, true));
+           
+           
+           System.out.print (ejercicios.vanidad(22));
+           System.out.print (ejercicios.vanidad(23));
+           System.out.print (ejercicios.vanidad(24));
     }
     
     
