@@ -53,6 +53,18 @@ public class EjerciciosBasicosJava {
  }
  return false;
   }
+  
+  // ejercicio6
+  public boolean digitoIgual(int a, int b){
+  int aIzq = a / 10;
+  int aDer = a% 10;
+  int bIzq = b/ 10;
+  int bDer = b % 10;
+  if(aIzq == bIzq || aIzq == bDer || aDer == bIzq || aDer == bDer){
+      return true;
+  }
+  return false;
+  }
     
 
     /**
@@ -60,19 +72,19 @@ public class EjerciciosBasicosJava {
      */
     public static void main(String[] args) {
         EjerciciosBasicosJava ejercicios = new EjerciciosBasicosJava();
-        System.out.print (ejercicios.fiestaArdillas(30, false));
-        System.out.print (ejercicios.fiestaArdillas(50, true));
-        System.out.print (ejercicios.fiestaArdillas(70, true));
+          System.out.print (ejercicios.fiestaArdillas(30, false));
+          System.out.print (ejercicios.fiestaArdillas(50, true));
+          System.out.print (ejercicios.fiestaArdillas(70, true));
         
         // testeo el ejercicio 2
-         System.out.print (ejercicios.multa(60, false));
+          System.out.print (ejercicios.multa(60, false));
           System.out.print (ejercicios.multa(65, false));
-           System.out.print (ejercicios.multa(65, true));
+          System.out.print (ejercicios.multa(65, true));
            
            // testeo ejercicio 3
-           System.out.print (ejercicios.vanidad(22));
-           System.out.print (ejercicios.vanidad(23));
-           System.out.print (ejercicios.vanidad(24));
+          System.out.print (ejercicios.vanidad(22));
+          System.out.print (ejercicios.vanidad(23));
+          System.out.print (ejercicios.vanidad(24));
            
            // testeo ejercicio 4
           System.out.print (ejercicios.contesta(false,false,false));  
@@ -83,6 +95,11 @@ public class EjerciciosBasicosJava {
           System.out.print ("menorPor10(1,7,11)"+ ejercicios.menorPor10(1, 7, 11));
           System.out.print ("menorPor10(1,7,10)"+ ejercicios.menorPor10(1, 7, 10));
           System.out.print ("menorPor10(11,1,7)"+ ejercicios.menorPor10(11, 1, 7));
+          
+          // testeo ejercicio 6 
+          System.out.println("digitoIgual (12, 23) " + ejercicios.digitoIgual(12, 23) ); 
+          System.out.println("digitoIgual (12, 43) " + ejercicios.digitoIgual(12, 43) );
+          System.out.println("digitoIgual (12, 44) " + ejercicios.digitoIgual(12, 44) );
     }
     
     
