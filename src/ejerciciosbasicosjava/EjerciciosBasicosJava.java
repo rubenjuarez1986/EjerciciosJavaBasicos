@@ -78,6 +78,18 @@ public class EjerciciosBasicosJava {
    
    return false;
   }
+  // ejercicio 8
+  public boolean menos20(int numero){
+      
+  if(numero%20==0){
+  return false;
+  }
+  if (numero%20==18 || numero%20==8 ||numero%20==19 || numero%20==9){
+  
+  return true;
+  }
+  return false;
+  }
     
 
     /**
@@ -119,6 +131,11 @@ public class EjerciciosBasicosJava {
           System.out.println("multiploMultiple(3) " + ejercicios.multiploMultiple(3) );
           System.out.println("multiploMultiple(10) " + ejercicios.multiploMultiple(10) );
           System.out.println("multiploMultiple(15) " + ejercicios.multiploMultiple(15) );
+          
+          //testeo ejercicio 8
+          System.out.println( ejercicios.menos20(18) );
+          System.out.println( ejercicios.menos20(19) );
+          System.out.println( ejercicios.menos20(20) );
     }
     
     
